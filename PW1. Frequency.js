@@ -1,12 +1,12 @@
-function frecuency (string){
-    let result = {}, letter;
+function frecuency(string) {
+  let result = {}, letter;
 
-    for(letter of string.toLowerCase()){
-        query = (!(letter in result)) ?
-            result[letter] = 1 : result[letter] +=1;
-        
-    }
-    return result;
+  for (letter of string.toLowerCase()) {
+    query = (!(letter in result)) ?
+      result[letter] = 1 : result[letter] += 1;
+
+  }
+  return result;
 }
 
 console.log('Test 1: ', frecuency('cccbbbaaa'));
